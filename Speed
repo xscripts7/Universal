@@ -1,4 +1,4 @@
-local Speed = Speed or 16  -- Usa a variável Speed passada, ou 16 se não for definida
+local Speed = _G.Speed or 16  -- Usa a variável global Speed, ou 16 se não for definida
 
 local function setPlayerSpeed()
     local player = game.Players.LocalPlayer
