@@ -1,0 +1,10 @@
+local Speed = _G.Speed or 16
+
+local function setPlayerSpeed()
+    local player = game.Players.LocalPlayer
+    local character = player.Character or player.CharacterAdded:Wait()
+    local humanoid = character:WaitForChild("Humanoid")
+    humanoid.WalkSpeed = Speed
+end
+
+setPlayerSpeed()
